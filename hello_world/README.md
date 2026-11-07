@@ -11,3 +11,5 @@ Introduction to C programming.
 5-printf.c: Prints a message using printf.
 
 6-size.c: Prints the sizes of C data types using sizeof.
+
+100-intel: Generates Intel syntax assembly code from a C file.
