@@ -13,3 +13,5 @@ Introduction to C programming.
 6-size.c: Prints the sizes of C data types using sizeof.
 
 100-intel: Generates Intel syntax assembly code from a C file.
+
+101-quote.c: Prints a quote to standard error using write.
