@@ -7,3 +7,5 @@ C variables, conditional statements, and loops.
 3-print_alphabets.c: Prints the lowercase and uppercase alphabets.
 
 4-print_alphabt.c: Prints the lowercase alphabet except q and e.
+
+5-print_numbers.c: Prints all single-digit decimal numbers.
