@@ -9,3 +9,5 @@ Introduction to C programming.
 4-puts.c: Prints a message using puts.
 
 5-printf.c: Prints a message using printf.
+
+6-size.c: Prints the sizes of C data types using sizeof.
