@@ -9,3 +9,5 @@ C variables, conditional statements, and loops.
 4-print_alphabt.c: Prints the lowercase alphabet except q and e.
 
 5-print_numbers.c: Prints all single-digit decimal numbers.
+
+6-print_numberz.c: Prints digits from 0 to 9 using putchar.
