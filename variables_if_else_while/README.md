@@ -11,3 +11,5 @@ C variables, conditional statements, and loops.
 5-print_numbers.c: Prints all single-digit decimal numbers.
 
 6-print_numberz.c: Prints digits from 0 to 9 using putchar.
+
+7-print_tebahpla.c: Prints the lowercase alphabet in reverse.
