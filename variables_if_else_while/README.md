@@ -19,3 +19,5 @@ C variables, conditional statements, and loops.
 9-print_comb.c: Prints single-digit numbers separated by commas and spaces.
 
 100-print_comb3.c: Prints all unique combinations of two different digits.
+
+101-print_comb4.c: Prints all unique combinations of three different digits.
