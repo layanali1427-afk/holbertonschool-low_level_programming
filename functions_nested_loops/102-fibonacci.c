@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-	unsigned long long a = 1, b = 2, next;
+	unsigned long a = 1, b = 2, next;
 	int i;
 
 	for (i = 0; i < 50; i++)
 	{
-		printf("%llu", a);
+		printf("%lu", a);
 
 		if (i < 49)
 			printf(", ");
