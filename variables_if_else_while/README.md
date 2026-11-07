@@ -15,3 +15,5 @@ C variables, conditional statements, and loops.
 7-print_tebahpla.c: Prints the lowercase alphabet in reverse.
 
 8-print_base16.c: Prints hexadecimal digits in lowercase.
+
+9-print_comb.c: Prints single-digit numbers separated by commas and spaces.
