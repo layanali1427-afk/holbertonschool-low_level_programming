@@ -1,3 +1,5 @@
 C variables, conditional statements, and loops.
 
 1-last_digit.c: Prints the last digit of a random number.
+
+2-print_alphabet.c: Prints the lowercase alphabet using putchar.
