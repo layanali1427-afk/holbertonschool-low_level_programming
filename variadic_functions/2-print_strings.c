@@ -2,9 +2,9 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings - Prints strings separated by a string
- * @separator: String printed between strings
- * @n: Number of strings to print
+ * print_strings - Prints strings followed by a new line
+ * @separator: String to print between strings
+ * @n: Number of strings
  *
  * Return: Nothing
  */
