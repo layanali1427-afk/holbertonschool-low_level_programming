@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <stdarg.h>
 #include "variadic_functions.h"
 
 /**
- * print_strings - Prints strings followed by a new line
- * @separator: String to print between strings
- * @n: Number of strings
+ * print_strings - Prints strings separated by a separator
+ * @separator: String printed between strings
+ * @n: Number of strings to print
  *
  * Return: Nothing
  */
