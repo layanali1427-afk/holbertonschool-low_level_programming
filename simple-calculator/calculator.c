@@ -1,14 +1,40 @@
 #include <stdio.h>
 
 /**
- * main - Runs a calculator with addition, subtraction and multiplication
+ * read_number - Reads an integer and rejects invalid input
+ * @value: Pointer to the integer
+ *
+ * Return: 1 on success, 0 on end of input
+ */
+int read_number(int *value)
+{
+	int status, c;
+
+	while (1)
+	{
+		status = scanf("%d", value);
+
+		if (status == 1)
+			return (1);
+
+		if (status == EOF)
+			return (0);
+
+		printf("Invalid number\n");
+
+		while ((c = getchar()) != '\n' && c != EOF)
+			;
+	}
+}
+
+/**
+ * main - Runs a calculator with four operations
  *
  * Return: 0 on success
  */
 int main(void)
 {
-	int choice, a, b;
-	int result;
+	int choice, a, b, status, c;
 
 	printf("Simple Calculator\n");
 
@@ -22,15 +48,17 @@ int main(void)
 		printf("Choice: ");
 		fflush(stdout);
 
-		result = scanf("%d", &choice);
+		status = scanf("%d", &choice);
 
-		if (result != 1)
+		if (status == EOF)
+			break;
+
+		if (status != 1)
 		{
-			if (result == EOF)
-				break;
-
 			printf("Invalid choice\n");
-			scanf("%*s");
+
+			while ((c = getchar()) != '\n' && c != EOF)
+				;
 			continue;
 		}
 
@@ -46,27 +74,28 @@ int main(void)
 			continue;
 		}
 
-		if (choice >= 1 && choice <= 3)
-		{
-			printf("A: ");
-			fflush(stdout);
+		printf("A: ");
+		fflush(stdout);
 
-			if (scanf("%d", &a) != 1)
-				return (1);
+		if (!read_number(&a))
+			return (1);
 
-			printf("B: ");
-			fflush(stdout);
+		printf("B: ");
+		fflush(stdout);
 
-			if (scanf("%d", &b) != 1)
-				return (1);
+		if (!read_number(&b))
+			return (1);
 
-			if (choice == 1)
-				printf("Result: %d\n", a + b);
-			else if (choice == 2)
-				printf("Result: %d\n", a - b);
-			else
-				printf("Result: %d\n", a * b);
-		}
+		if (choice == 1)
+			printf("Result: %d\n", a + b);
+		else if (choice == 2)
+			printf("Result: %d\n", a - b);
+		else if (choice == 3)
+			printf("Result: %d\n", a * b);
+		else if (b == 0)
+			printf("Error: division by zero\n");
+		else
+			printf("Result: %g\n", (double)a / b);
 	}
 
 	return (0);
