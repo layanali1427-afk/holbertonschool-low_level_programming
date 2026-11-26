@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Runs a calculator menu with addition
+ * main - Runs a calculator with addition, subtraction and multiplication
  *
  * Return: 0 on success
  */
@@ -46,19 +46,26 @@ int main(void)
 			continue;
 		}
 
-		if (choice == 1)
+		if (choice >= 1 && choice <= 3)
 		{
 			printf("A: ");
 			fflush(stdout);
+
 			if (scanf("%d", &a) != 1)
 				return (1);
 
 			printf("B: ");
 			fflush(stdout);
+
 			if (scanf("%d", &b) != 1)
 				return (1);
 
-			printf("Result: %d\n", a + b);
+			if (choice == 1)
+				printf("Result: %d\n", a + b);
+			else if (choice == 2)
+				printf("Result: %d\n", a - b);
+			else
+				printf("Result: %d\n", a * b);
 		}
 	}
 
